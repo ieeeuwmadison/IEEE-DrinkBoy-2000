@@ -5,6 +5,13 @@
 // Screen codes taken from https://www.youtube.com/watch?v=PrIAnDZ9dp8
 // Please check him out!
 
+// If the board is working correctly, these are expected:
+// 1. Red LED blink 5 times
+// 2. Green LED blink 5 times
+// 3. Piezo buzzes 5 times with an increasing pitch
+// 4. Screen displays triangles, rectangles, circles, and a text
+// 5. MQ3 reads data 10 times and calculates the average
+
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
@@ -22,7 +29,7 @@ Adafruit_SSD1306 display;
 
 void setup() {
   Serial.begin(9600);
-  while (!Serial);
+  //while (!Serial); // uncomment this if you want the program to wait until you open a terminal
   Serial.println("initializing ...");
   pin_init();
   screen_init();
