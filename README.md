@@ -1,4 +1,5 @@
-#Instruction
+# Instruction
+
 1.	Install Arduino IDE if you have not done so.
 2.	Install Arduino Nano clone driver.
 3.	Install Screen library Adafruit-GFX-Library and Adafruit_SSD1306. Open Arduino IDE->Sketch->Include Library->Manage Libraries and search for those libraries.
